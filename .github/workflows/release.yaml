@@ -21,8 +21,8 @@ jobs:
         id: download-artifact
         with:
           name: EzArduino
-          path: ./
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: ./EzArduino.zip
+          files: ${{ steps.download-artifact.outputs.download-path }}
+          token: ${{ secrets.GITHUB_TOKEN }}
