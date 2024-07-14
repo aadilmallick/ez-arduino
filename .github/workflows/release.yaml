@@ -11,8 +11,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: zip code
+        run: |
+          mkdir EzArduino 
+          mv *.h EzArduino
+          zip -r EzArduino.zip EzArduino
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: ./*.h
+          files: EzArduino.zip
           token: ${{secrets.GH_ACCESS_TOKEN}}
