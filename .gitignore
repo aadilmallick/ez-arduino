@@ -1,4 +1,4 @@
 # ignore any sketches
 
-*.ino
+basic_utils.ino
 bin/
