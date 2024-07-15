@@ -28,6 +28,8 @@ void loop()
 
 ## Installation
 
+This library is officially apart of the Arduino library manager. Just download it directly from the IDE! But you also have these two options if you prefer to do manual installation:
+
 ### Git install
 
 1. Download any libraries using the arduino IDE, like the `Servo` library. This should create a `/home/Arduino/Libraries` folder.
@@ -267,16 +269,7 @@ Base class for all analog input components.
 ### Photoresistor
 
 Derived from `AnalogInputComponent`. Represents a photoresistor (light sensor).
-
-#### Constructor
-
-- `Photoresistor(int _pin)`: Initializes the photoresistor with the specified pin and sets specific sensor range values.
-
-### TemperatureSensor
-
-Derived from `AnalogInputComponent`. Represents a temperature sensor.
-
-#### Constructor
+gets back the data that lives at the
 
 - `TemperatureSensor(int _pin)`: Initializes the temperature sensor with the specified pin and sets specific sensor range values.
 
